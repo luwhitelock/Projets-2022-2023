@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Controverse</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel='stylesheet' href='css/style.css'>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src='js/script.js'></script>
+
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body>
+  
+  <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href="index.html">Accueil </a></li>
+        <li><a href="ReconnaissanceFaciale.html">La Reconnaissance Faciale</a></li>
+        <li><a href="usages.html">Les Usages</a></li>
+        <li>
+          <a class="dropdown-arrow" href="acteurs.html">Les Acteurs</a>
+          <ul class="sub-menus">
+            <li><a href="gouv.html">Gouvernement</a></li>
+            <li><a href="ONG.html">ONG</a></li>
+            <li><a href="citoyens.html">Citoyens</a></li>
+            <li><a href="entreprisesEtat.html">Entreprises</a></li>
+          </ul>
+        </li>
+        <li style="float: right; margin-right: 20px;"><a href='contact.html'>Contact</a></li>
+      </ul>
+    </nav>
+
+  <div id="wrapper" class="divided">
+<!-- debut wrapper -->
+
+
+
+<section class="wrapper style1 align-center -">
+ <div class="inner">
+<!-- lemail -->
+  <br>
+    <h2>Nous Contacter</h2>
+  
+  <div class="content">
+
+    <form method="post" action="#">
+      <div class="fields">
+        <div class="field half">
+          <label for="name">Nom</label>
+          <input required type="text" name="nom" id="nom" value="">
+        </div>
+        <div class="field half">
+          <label for="email">Adresse mail</label>
+          <input required type="email" name="email" id="email" value="">
+        </div>
+        <div class="field">
+          <label for="sujet">Motif</label>
+          <select name="sujet" id="sujet">
+            <option value="">- Catégorie -</option>
+            <option value="1">Renseignements</option>
+            <option value="2">Signaler une erreur</option>
+            <option value="3">Autre</option>
+          </select>
+        </div>
+       
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea required name="message" id="message" rows="6"></textarea>
+        </div>
+        <!-- <div class="field ">
+          <input type="checkbox" id="copy" name="copy">
+          <label for="copy">M'envoyer une copie de ce Message</label>
+        </div> -->
+      </div>
+      <ul class="actions">
+        <li><input type="submit" name="submit" id="submit" value="Ouvrir mon appli de mail"></li>
+      </ul>
+    </form>
+  </div>
+  </div>
+</section>
+
+
+
+
+<footer class="wrapper style1 align-center">
+  <div class="inner">
+    <ul class="icons">
+      <li><a href="index.html" class="icon brands style2">Accueil</a></li>
+      <li><a href="ReconnaissanceFaciale.html" class="icon brands style2">La Reconnaissance Faciale</a></li>
+      <li><a href="usages.html" class="icon brands style2">Les Usages</a></li>
+      <li><a href="acteurs.html" class="icon brands style2 ">Les Acteurs</a></li>
+      <li><a href="contact.html" class="icon style2 fa-envelope">Contact</a></li>
+    </ul>
+    <p><a href="">Mentions Légales</a></p>
+  </div>
+</footer>
+
+
+<!-- fin wrapper -->
+  </div>
+</body>
+
+</html>

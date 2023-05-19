@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Controverse</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="js/script.js"></script>
+
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body>
+  <nav id="menu">
+    <input type="checkbox" id="responsive-menu" onclick="updatemenu()" /><label></label>
+    <ul>
+      <li><a href="index.html">Accueil </a></li>
+      <li>
+        <a href="ReconnaissanceFaciale.html">La Reconnaissance Faciale</a>
+      </li>
+      <li><a href="usages.html">Les Usages</a></li>
+      <li>
+        <a class="dropdown-arrow" href="acteurs.html">Les Acteurs</a>
+        <ul class="sub-menus">
+          <li><a href="gouv.html">Gouvernement</a></li>
+          <li><a href="ONG.html">ONG</a></li>
+          <li><a href="citoyens.html">Citoyens</a></li>
+          <li><a href="entreprisesEtat.html">Entreprises</a></li>
+        </ul>
+      </li>
+      <li style="float: right; margin-right: 20px">
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="wrapper" class="divided">
+    <!-- debut wrapper -->
+
+    <!-- Banner -->
+    <section
+      class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+      <div class="content">
+        <h1>La Reconnaissance Faciale</h1>
+        <p class="major">
+          Cette technologie est une réalité omniprésente, utilisant des algorithmes sophistiqués pour 
+        captuer, analyser et identifier les caractéristiques faciales d'une personne, ouvrant un large évantail d'applications.
+        </p>
+        <p>
+          Interessons-nous à son fonctionnement technique.
+        </p>
+        
+      </div>
+      <div class="image">
+        <img src="images/code - Copie.png" alt="" />
+      </div>
+    </section>
+
+
+
+
+    <section class="wrapper style1 align-center">
+      <div class="inner" id="first">
+        
+        <header>
+          <h3>Fonctionnement de la Reconnaissance Faciale</h3>
+          <p>Un point technique sur cette technologie </p>
+        </header>
+        <div class="index align-left">
+
+          <!-- Text -->
+          <section>
+            
+            <div class="content">
+
+              <p>La reconnaissance faciale est une technologie qui utilise des algorithmes pour 
+                analyser et reconnaître les <code>caractéristiques faciales </code> d'une personne, ce qui permet de les stocker et de les comparer aisément.
+              </p>
+              
+
+
+              <p>Le fonctionnement se divise en plusieurs  <b>étapes</b> clés :  </p>
+              <ol><span class="image right"><img src="images/capt.svg" style="display: inline-block; width: 50%;" alt></span>
+                <li><b>La capture de l'image :</b> en pratique on peut utiliser une image fixe, un enregistrement vidéo ou un flux vidéo en direct (une caméra de surveillance par exmeple). 
+                  <br><br>
+                </li>
+                <span class="image left"><img src="images/recog.svg" style="display: inline-block; width: 50%;" alt></span>
+                <li> <b>Détection des visages :</b> Des algorithmes de détection des visages sont utilisés pour identifier et localiser les visages présents dans l'image, à l'aide d'éléments caractéristiques tels que les contours, le nez, les yeux ou la bouche. </li>
+                <br>
+                 <li><b>Extraction des caractéristiques faciales :</b> le logiciel de reconnaissance d’image calculr la distance entre les principales fonctionnalités faciales,  créant un modèle de visage unique.
+                  L'empreinte faciale obtenue est unique et stockée sous forme de vecteurs : <br><br>
+
+                  <code>'embeddings': [0.20963514..., 0.39746657..., 0.12019053..., 0.6947492..., ..., 0.9535575..., 0.5454552..., 0.82360446..., 0.21096309...]</code>
+                  <br><br>
+                  <p>Le stockage de ces données est alors extremement pratique, dans des bases de donnnées dédiées et ne prend que très peu de place par visage.</p>
+                                  </li>
+
+                                  <span class="image right"><img src="images/trouvee.svg" style="display: inline-block; width: 50%;" alt></span>
+
+                <li>
+                   <b>Comparaison et correspondance :</b>  Le modèle facial est comparé à une base de données de visages connus, stockés ou disponibles.
+                
+                </li>
+
+                <br>
+                <li> <b>Prise de décision :</b>  Une détermination est effectuée si une correspondance est trouvée dans la base de données.
+                </li>
+              </ol>
+            </div>
+          </section>
+          <!-- Text -->
+          
+             
+
+          <!-- Text -->
+          <section>
+            <header>
+              <h3>Intérêt</h3>
+            </header>
+            <div class="content">
+
+              <p>
+                Un stockage aisé et des sources vidéos disponibles en grande quatité ouvre la possibilité d'une reconnaissance faciale déployée à grande échelle.
+              </p>
+
+            </div>
+          </section>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- fin wrapper -->
+    <footer class="wrapper style1 align-center">
+      <div class="inner">
+        <ul class="icons">
+          <li><a href="index.html" class="icon brands style2">Accueil</a></li>
+          <li><a href="ReconnaissanceFaciale.html" class="icon brands style2">La Reconnaissance Faciale</a></li>
+          <li><a href="usages.html" class="icon brands style2">Les Usages</a></li>
+          <li><a href="acteurs.html" class="icon brands style2 ">Les Acteurs</a></li>
+          <li><a href="contact.html" class="icon style2 fa-envelope">Contact</a></li>
+        </ul>
+        <p><a href="">Mentions Légales</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
